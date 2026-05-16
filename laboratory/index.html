@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg">
-<meta charset="UTF-8"><meta name="theme-color" content="#264653">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laboratory in Fredericton – Canada</title>
-<meta name="description" content="In Fredericton, laboratory testing addresses the unique behavior of Saint John River Valley soils, including sensitive marine clays and compact glacial til">
+<meta name="description" content="Our Fredericton laboratory testing suite addresses the core index properties of fine-grained and coarse-grained soils derived from the region’s glacial til">
 <link rel="canonical" href="https://fredericton.geotechnical-engineering.org/laboratory/">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Laboratory in Fredericton – Canada">
-<meta property="og:description" content="In Fredericton, laboratory testing addresses the unique behavior of Saint John River Valley soils, including sensitive marine clays and compact glacial til">
+<meta property="og:description" content="Our Fredericton laboratory testing suite addresses the core index properties of fine-grained and coarse-grained soils derived from the region’s glacial til">
 <meta property="og:url" content="https://fredericton.geotechnical-engineering.org/laboratory/">
 <meta property="og:site_name" content="Geotechnical Engineering">
-<meta property="og:image" content="https://fredericton.geotechnical-engineering.org/img/oedometer-consolidation-1.webp">
+<meta property="og:image" content="https://fredericton.geotechnical-engineering.org/img/anclajes-4.webp">
 <meta property="og:locale" content="en_CA">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Laboratory in Fredericton – Canada">
-<meta name="twitter:description" content="In Fredericton, laboratory testing addresses the unique behavior of Saint John River Valley soils, including sensitive marine clays and compact glacial til">
-
+<meta name="twitter:description" content="Our Fredericton laboratory testing suite addresses the core index properties of fine-grained and coarse-grained soils derived from the region’s glacial til">
 <style>
-
-@media (max-width: 900px) {
-    .sidebar { display: none; }
-body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-summary:hover { background: rgba(0,0,0,0.02); }
-tr:nth-child(even) { background: #f8fafc; }
-.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
-
-#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-.sidebar .cat.open + .sub { display: flex; }
-.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 :root {
     --primary: #8B5CF6;
     --accent: #A78BFA;
@@ -41,125 +28,158 @@ tr:nth-child(even) { background: #f8fafc; }
     --font-h: 'Merriweather', 'Segoe UI', sans-serif;
     --font-b: 'Source Sans Pro', 'Segoe UI', sans-serif;
 }
-    .header-top { flex-direction: column; text-align: center; }
-
-.cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s;border-bottom:1px solid rgba(255,255,255,.05)}
-.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+a { color: var(--primary); text-decoration: none; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
-main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
-.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}
-.cat-name:hover{text-decoration:underline;text-underline-offset:3px}
-.sidebar .cat .arrow { font-size: .65rem; transition: transform .2s; }
-.servicio:hover { border-color: var(--primary); }
-.cta .whatsapp-btn:hover { background: #1eb853; }
-.sidebar .sub { display: none; background: rgba(0,0,0,0.15); flex-direction: column; }
-summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
-    .container { padding: 1rem; }
 
-details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-    main { padding: 1.5rem; }
-.cta .contacto-line a { color: white; text-decoration: underline; }
-.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
-header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
-.sidebar .sub a {
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
+}
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.sidebar .cat-toggle {
+    background: none; border: 0; color: inherit; cursor: pointer;
+    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+.sidebar .cat-sub {
+    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+.sidebar .cat-sub[hidden] { display: none; }
+.sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
     font-size: .78rem; transition: all .15s; text-decoration: none;
     border-left: 2px solid transparent;
 }
-/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
-.sidebar { padding: .5rem 0; }
-a { color: var(--primary); text-decoration: none; }
-details[open] summary::before { content: '− '; }
-.cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
-
-.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
-.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-main p { margin-bottom: 1rem; color: #334155; }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s}
-main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
-main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
-footer a { color: rgba(255,255,255,0.85); }
-main section { margin-bottom: 1.5rem; }
-
-.cta .whatsapp-btn {
-    display: inline-block; background: #25D366; color: white;
-    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
-    margin-bottom: 1.25rem; font-size: 1rem;
-}
-.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
-.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
-
-footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
-
-header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-
-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-.sidebar .cat.open .arrow { transform: rotate(90deg); }
-.sidebar .cat {
-    cursor: pointer; display: flex; justify-content: space-between; align-items: center;
-    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
-    transition: background .15s;
-    border-top: 1px solid rgba(255,255,255,0.04);
-}
-.cat-sub-wrap a:hover{opacity:1;background:rgba(255,255,255,.05)}
-.cat-sub-wrap a{display:block;padding:.5rem 1.1rem .5rem 1.8rem;color:inherit;text-decoration:none;font-size:.92rem;opacity:.85;transition:opacity .15s,background .15s}
-.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-
-.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-.cat-row:hover{background:rgba(255,255,255,.05)}
-th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
-summary::-webkit-details-marker { display: none; }
-
-.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
-.cat-sub-wrap{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-.header-contact a:hover { color: white; }
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-.sidebar .sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-.cat-toggle:hover{background:rgba(255,255,255,.1)}
-* { margin:0; padding:0; box-sizing:border-box; }
-.sidebar .cat:hover { background: rgba(255,255,255,0.08); }
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+.header-contact a:hover { color: white; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+main section { margin-bottom: 1.5rem; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+main p { margin-bottom: 1rem; color: #334155; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+tr:nth-child(even) { background: #f8fafc; }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+.servicio:hover { border-color: var(--primary); }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+details[open] summary::before { content: '− '; }
+summary:hover { background: rgba(0,0,0,0.02); }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+footer a { color: rgba(255,255,255,0.85); }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
     .content-area { flex-direction: column; }
-.sidebar {
-    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
-    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
-    max-height: calc(100vh - 2rem); overflow-y: auto;
-}</style>
-<style>
-@media(min-width:901px){
-  .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
-  .sidebar nav,.sidebar .nav{display:block!important}
-  aside{align-self:start!important}
-  main{flex:1!important;min-width:0!important}
-  .navbar{display:flex!important;align-items:center!important;justify-content:space-between!important}
-  .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
-  body{background:#FAFAFA!important;color:#18181B!important}
-img{max-width:100%!important;height:auto!important}</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@id":"https://fredericton.geotechnical-engineering.org/#website-072c","@type":"WebSite","url":"https://fredericton.geotechnical-engineering.org"},"description":"In Fredericton, laboratory testing addresses the unique behavior of Saint John River Valley soils, including sensitive marine clays and compact glacial til","@id":"https://fredericton.geotechnical-engineering.org/laboratory/","name":"Laboratory in Fredericton – Canada","inLanguage":"en","url":"https://fredericton.geotechnical-engineering.org/laboratory/","@type":"WebPage"},{"itemListElement":[{"position":1,"name":"Home","@type":"ListItem","item":"https://fredericton.geotechnical-engineering.org/"},{"position":2,"name":"Laboratory","@type":"ListItem","item":"https://fredericton.geotechnical-engineering.org/laboratory/"}],"@type":"BreadcrumbList"},{"itemListElement":[{"position":1,"name":"Oedometer consolidation test","@type":"ListItem","url":"https://fredericton.geotechnical-engineering.org/oedometer-consolidation/"},{"position":2,"name":"Residual soil characterization","@type":"ListItem","url":"https://fredericton.geotechnical-engineering.org/residual-soil-characterization/"},{"position":3,"name":"Soil mechanics study","@type":"ListItem","url":"https://fredericton.geotechnical-engineering.org/soil-mechanics-study/"},{"position":4,"name":"Triaxial test","@type":"ListItem","url":"https://fredericton.geotechnical-engineering.org/triaxial/"}],"name":"Laboratory","@type":"ItemList"}]}</script></head>
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+    .container { padding: 1rem; }
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://fredericton.geotechnical-engineering.org/laboratory/", "url": "https://fredericton.geotechnical-engineering.org/laboratory/", "name": "Laboratory in Fredericton – Canada", "inLanguage": "en", "description": "Our Fredericton laboratory testing suite addresses the core index properties of fine-grained and coarse-grained soils derived from the region’s glacial til", "isPartOf": {"@type": "WebSite", "@id": "https://fredericton.geotechnical-engineering.org/#website", "url": "https://fredericton.geotechnical-engineering.org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fredericton.geotechnical-engineering.org/"}, {"@type": "ListItem", "position": 2, "name": "Laboratory", "item": "https://fredericton.geotechnical-engineering.org/laboratory/"}]}, {"@type": "ItemList", "name": "Laboratory", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://fredericton.geotechnical-engineering.org/atterberg-limits/", "name": "Atterberg limits"}, {"@type": "ListItem", "position": 2, "url": "https://fredericton.geotechnical-engineering.org/grain-size/", "name": "Grain size analysis (sieve + hydrometer)"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#831843"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
+</head>
 <body>
 
 <header>
     <div class="container">
         <div class="header-top">
             <div>
-                <div style="display:inline-flex;align-items:center;gap:10px;"><svg viewBox="0 0 64 64" width="44" height="44" style="flex-shrink:0"><rect x="24" y="8" width="16" height="48" fill="#8B5CF6"/><rect x="14" y="8" width="36" height="8" fill="#A78BFA"/><rect x="14" y="48" width="36" height="8" fill="#A78BFA"/></svg><span style="font-family:Georgia, "Times New Roman", serif;sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Fredericton</span></div>
+                <div style="display:inline-flex;align-items:center;gap:10px;"><svg viewBox="0 0 64 64" width="44" height="44" style="flex-shrink:0"><rect x="24" y="8" width="16" height="48" fill="#8B5CF6"/><rect x="14" y="8" width="36" height="8" fill="#A78BFA"/><rect x="14" y="48" width="36" height="8" fill="#A78BFA"/></svg><span style="font-family:'Merriweather',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Fredericton</span></div>
                 <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Fredericton, Canada</div>
             </div>
             <div class="header-contact">
                 <a href="mailto:contact@geotechnical-engineering.org">contact@geotechnical-engineering.org</a>
             </div>
         </div>
-        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li>Seismic & Special</li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Laboratory</li></ol></nav>
+        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Laboratory</li></ol></nav>
         <h1>Laboratory in Fredericton</h1>
     </div>
 </header>
@@ -167,62 +187,37 @@ img{max-width:100%!important;height:auto!important}</style><script type="applica
 <div class="container">
     <div class="content-area">
         <aside class="sidebar">
-            <nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="../investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../standard-penetration">SPT (Standard Penetration Test)</a></div></div><div class="cat-item" data-cat="in-situ-testing"><div class="cat-row"><a href="../in-situ-testing/" class="cat-name">In-Situ Testing</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ Testing"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../field-permeability">Field permeability test (Lefranc/Lugeon)</a><a href="../undisturbed-sampling">Undisturbed sampling (Shelby tube)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="../laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../oedometer-consolidation">Oedometer consolidation test</a><a href="../residual-soil-characterization">Residual soil characterization</a><a href="../soil-mechanics-study">Soil mechanics study</a><a href="../triaxial">Triaxial test</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="../foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../differential-settlement-analysis">Differential settlement analysis</a><a href="../driven-pile-design">Driven pile design</a><a href="../foundations-fill">Foundations on fill (analysis)</a><a href="../pile-skin-friction-vs">Pile skin friction vs. end bearing analysis</a></div></div><div class="cat-item" data-cat="slopes-walls"><div class="cat-row"><a href="../slopes-walls/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../mechanically-stabilized-earth">MSE (Mechanically Stabilized Earth) wall design</a><a href="../retaining-wall-design">Retaining wall design</a><a href="../slope-failure-analysis">Slope failure analysis</a><a href="../slope-stability-analysis">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="../ground-improvement/" class="cat-name">Ground improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Ground improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../deep-soil-mixing">Deep Soil Mixing (DSM) design</a><a href="../geogrid-specification">Geogrid specification</a><a href="../geotechnical-drainage-design">Geotechnical drainage design</a><a href="../geotechnical-instrumentation">Geotechnical instrumentation (design and installation)</a><a href="../grouting-design">Grouting design</a><a href="../lime-cement-stabilization">Lime and cement stabilization</a><a href="../stone-column-design">Stone column design</a><a href="../vibrocompaction-design">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="../seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../base-isolation-seismic-design">Base isolation seismic design</a></div></div><div class="cat-item" data-cat="roadway"><div class="cat-row"><a href="../roadway/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../geotechnical-road-drainage">Geotechnical road drainage</a><a href="../road-subgrade-design">Road subgrade design</a></div></div><div class="cat-item" data-cat="underground-excavations"><div class="cat-row"><a href="../underground-excavations/" class="cat-name">Underground Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Underground Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub-wrap" hidden><a href="../geotechnical-analysis-soft-soil">Geotechnical analysis for soft soil tunnels</a></div></div></nav>
+            <nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/proctor-tests/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ Testing</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ Testing"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/in-situ-permeability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Ground improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Ground improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/deep-excavations/">Base isolation seismic design</a><a href="/deep-excavations/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Underground Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Underground Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav>
         </aside>
         <main>
-            <section><p>In Fredericton, laboratory testing addresses the unique behavior of Saint John River Valley soils, including sensitive marine clays and compact glacial tills. Compliance with CSA A3000 and ASTM standards ensures reliable data for local ground conditions. Our facility performs advanced procedures such as the <a href="oedometer-consolidation">oedometer consolidation test</a> to quantify settlement potential and a comprehensive <a href="soil-mechanics-study">soil mechanics study</a> for strength and compressibility parameters.</p>
-
-<p>These analyses are critical for infrastructure built on compressible alluvium, slope stability assessments, and foundation design in the city’s expanding suburbs. Projects involving weathered bedrock also benefit from <a href="residual-soil-characterization">residual soil characterization</a> to determine saprolite behavior. Each program delivers precise parameters for geotechnical modeling and regulatory submissions.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/aislacion-sismica-1.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Base isolation seismic design in Fredericton" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure></section>
-
-            <blockquote style="border-left:4px solid #8B5CF6;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Base isolation in Fredericton shifts building periods beyond the 0.5–1.5 s band where local soils amplify motion, reducing spectral acceleration by up to 50%.</blockquote>
-
-            
-
-            <section>
-                <h2>Technical details of the service in Fredericton</h2>
-                <div>Locally, the river valley soils mean that site class C or D conditions are common, which can amplify longer-period motions. Base isolation seismic design works well here because the soft-to-medium soil profile provides a natural contrast with the stiff isolation layer. Before specifying the isolator properties, engineers typically run site-response analyses using shear-wave velocity profiles. <br>Key parameters for Fredericton include: <ul><li>Peak ground acceleration (PGA) from NBCC 2020: 0.12 to 0.20 g</li><li>Site class D amplification factors Fa and Fv near 1.2 to 1.5</li><li>Design displacement at the isolation interface: typically 200–400 mm</li><li>Damping ratio of lead-rubber bearings: 10–30% equivalent viscous</li></ul>These values inform whether deep soil mixing under the isolation plinth or <a href="../grouting-design">grouting</a> of the bearing stratum is needed to improve vertical stiffness.</div>
-            </section>
-
-            <figure style="margin:2rem auto;text-align:center;max-width:60%"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Base Isolation Seismic Design in Fredericton</figcaption></figure>
-
-            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #8B5CF6;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#8B5CF6;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">NBCC 2020 Sa(0.2) for Fredericton</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0.15–0.25 g</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Site class (typical)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">C or D</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Isolator design displacement</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">200–400 mm</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Lead-rubber bearing damping</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">10–30 %</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Target isolated period</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">2.0–3.0 s</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">CSA A23.3 concrete confinement</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">At isolator supports</td></tr></tbody></table></div>
-
-            
-
-            <section>
-                <h2>Typical technical challenges in Fredericton</h2>
-                <p>NBCC 2020 requires that the seismic force resisting system remain essentially elastic when base isolation is used, but the real risk in Fredericton is underestimating the soil-structure interaction. The deep alluvial deposits can lengthen the effective period beyond what the design spectrum assumes, potentially causing resonance if the isolator period is poorly chosen. Also, bearing capacity under cyclic vertical loads must be verified; the glaciofluvial sands are prone to cyclic mobility under repeated shear. Shear-wave velocity profiling and cyclic triaxial testing on undisturbed samples are essential to validate the design parameters.</p>
-            </section>
-
-            
-    <section class="block mid-cta-072c-072c" style="padding:2rem 0">
-      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
-        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
-        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p>
-        <a href="mailto:contact@geotechnical-engineering.org" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnical-engineering.org</a>
-      </div>
-    </section>
-
-            <div class="normas">
-                <strong>Applicable standards:</strong> NBCC 2020 (National Building Code of Canada), CSA A23.3:19 (Concrete Design), ASCE 7-16 Chapter 17 (Seismic Isolation), ASTM D4015 (Cyclic Triaxial)
-            </div>
-
-            <section>
-                <h2>Our services</h2>
-                <p>We provide the full suite of <a href="../foundations-fill/" data-interlink="1">analysis</a> and design support for base isolation in Fredericton: from site-specific response spectra to isolator specification and detailing.</p>
-                <style>.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#8B5CF6;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover{border-color:#8B5CF6;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#8B5CF6}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}</style><div class="servicios-grid"><div class="servicio"><h3>Site-Specific Seismic Hazard Analysis</h3><p>Probabilistic and deterministic hazard assessment using the Geological Survey of Canada's 6th generation model. We compute uniform hazard spectra for Fredericton and develop site-specific acceleration time histories for nonlinear isolation <a href="../foundations-fill/" data-interlink="1">analysis</a>.</p></div><div class="servicio"><h3>Isolator Selection and Detailing</h3><p>Lead-rubber bearings, high-damping rubber bearings, or friction pendulums sized for the expected displacement and gravity loads. We provide force-displacement loops, stability checks per NBCC 2020, and connection detailing to CSA A23.3.</p></div></div>
-            </section>
-
-            
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../oedometer-consolidation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Oedometer consolidation test</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../residual-soil-characterization/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Residual soil characterization</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../soil-mechanics-study/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil mechanics study</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../triaxial/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Triaxial test</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><p>The Laboratory in Fredericton serves as a critical facility for geotechnical and materials testing within New Brunswick’s evolving infrastructure landscape. Situated in the capital region, this laboratory supports a range of subsurface investigations and construction material evaluations, adhering to rigorous engineering protocols. Its technical context encompasses soil classification, compaction testing, and aggregate analysis, primarily for roadways, bridges, and foundation systems. The laboratory integrates advanced instrumentation such as triaxial shear apparatus and direct shear devices, enabling precise determination of shear strength, consolidation behavior, and permeability parameters. Local practitioners rely on this facility to characterize the region’s glacial till, alluvial deposits, and bedrock conditions, ensuring that design assumptions align with actual ground behavior. The laboratory’s role is particularly vital given Fredericton’s susceptibility to freeze-thaw cycles and seasonal moisture variation, which necessitate reliable soil behavior data for resilient infrastructure development.</p>
+<img src="/img/ensayo-proctor-5.webp" alt="Laboratory - Fredericton" loading="lazy" decoding="async" width="1200" height="400" style="width:100%;max-height:280px;object-fit:cover;display:block;border-radius:8px;margin:1.5rem 0"><p>Methodologies employed at the Laboratory in Fredericton follow standardized procedures consistent with Canadian Geotechnical Society guidelines and ASTM International specifications. Sample preparation involves careful trimming and saturation to replicate in-situ conditions, with moisture-density relationships determined via standard Proctor tests. Advanced triaxial testing is conducted under both consolidated-drained and consolidated-undrained conditions, utilizing digital data acquisition for precise stress-strain monitoring. Permeability assessments are performed using flexible wall permeameters, while Atterberg limits and grain size distributions are determined through mechanical sieving and hydrometer analyses. The laboratory also conducts rock mechanics testing, including point load index and unconfined compressive strength evaluations, essential for excavation design in the region’s sedimentary formations. Each procedure is documented with chain-of-custody protocols to maintain traceability and reproducibility, supporting both research and commercial projects.</p><p>Compliance with local standards is fundamental to operations at the Laboratory in Fredericton. Testing aligns with the New Brunswick Department of Transportation and Infrastructure’s specifications for subgrade and base materials, as well as provincial building codes that reference the National Building Code of Canada. The laboratory follows CSA A23.2 for concrete aggregates and CSA A3000 series for hydraulic binders, while geotechnical analyses adhere to the Canadian Foundation Engineering Manual. Quality assurance measures include regular inter-laboratory comparisons and proficiency testing programs coordinated with other accredited facilities across Atlantic Canada. The laboratory’s internal calibration system ensures that all apparatus meets tolerances prescribed by ISO/IEC 17025, even if formal accreditation is pending. This adherence to local standards guarantees that test results are legally defensible and acceptable for regulatory submissions, particularly for projects near watercourses or in floodplain zones where stringent groundwater control criteria apply.</p><p>Applications of the Laboratory in Fredericton’s outputs span municipal, provincial, and private sector projects. Typical uses include foundation design for residential and commercial structures along the Saint John River corridor, where soil liquefaction potential must be evaluated during seismic hazard assessments. Pavement design for arterial roads and highway rehabilitation employs resilient modulus data from repeated load triaxial tests, directly impacting layer thickness calculations. The laboratory supports environmental applications such as leachate barrier design for landfill expansions and contaminant transport modeling through riverbank soils. Additionally, slope stability analyses for cut slopes and embankments benefit from long-term strength parameters derived from drained creep tests. The laboratory’s results are integral to value engineering exercises, allowing consultants to optimize earthwork quantities while meeting durability requirements. Its role extends to forensic investigations, where post-failure soil samples help determine causative factors in pavement rutting or foundation settlement, thereby informing remediation strategies that enhance public safety and infrastructure longevity.</p></div></section>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../atterberg-limits/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Atterberg limits</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../grain-size/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Grain size analysis (sieve + hydrometer)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
+<section class="block mid-cta" style="padding:2rem 0"><div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#1d4ed815,#1d4ed808);border-left:4px solid #1d4ed8;padding:1.6rem 1.8rem;border-radius:8px;text-align:center"><h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B">Need a geotechnical assessment?</h3><p style="margin:0 0 1rem;color:#64748B">Reply within 24h.</p><a href="mailto:contact@geotechnical-engineering.org" style="display:inline-block;background:#1d4ed8;color:#FFF;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800">Email: contact@geotechnical-engineering.org</a></div></section>
+</main>
     </div>
 </div>
 
-<link rel="stylesheet" href="/css/leaflet-072c.css"/>
-<script src="/js/leaflet-072c.js"></script>
-<script>
-(function(){function init(){if(typeof L==="undefined"){setTimeout(init,200);return;}var el=document.getElementById("map-leaflet");if(!el)return;var map=L.map(el).setView([45.9488278,-66.6291827],12);L.tileLayer("https://{s}.tile-072c.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"© OpenStreetMap",maxZoom:18}).addTo(map);L.marker([45.9488278,-66.6291827]).addTo(map).bindPopup("Fredericton").openPopup();}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init);}else{init();}})();
-</script><footer style="background:#09090B;color:rgba(255,255,255,.85);padding:2rem 1.5rem;text-align:center;font-size:.92rem">Fredericton, Canada · <a href="mailto:contact@geotechnical-engineering.org" style="color:#FFF;text-decoration:underline">contact@geotechnical-engineering.org</a><div data-updated="2026-03-25" style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:.8rem">Last updated: 2026-03-27</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div></footer>
+<footer style="background:#09090B;color:rgba(255,255,255,.85);padding:2rem 1.5rem;text-align:center;font-size:.92rem">Fredericton, Canada · <a href="mailto:contact@geotechnical-engineering.org" style="color:#FFF;text-decoration:underline">contact@geotechnical-engineering.org</a><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.csagroup.org/" rel="nofollow noopener" target="_blank">CSA Group Standards</a> · <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-05-14" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-05-14</div></footer>
 
-<script>(function(){document.querySelectorAll(".cat-toggle").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();var s=b.parentElement.parentElement.querySelector(".cat-sub-wrap");var ex=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",!ex);if(s){s.hidden=ex;}});});})();</script></body>
+<script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.cat-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var item = btn.closest('.cat-item');
+    if (!item) return;
+    var sub = item.querySelector('.cat-sub');
+    if (!sub) return;
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (open) {
+        sub.setAttribute('hidden', '');
+    } else {
+        sub.removeAttribute('hidden');
+    }
+});
+</script>
+</body>
 </html>

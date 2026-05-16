@@ -1,48 +1,51 @@
-# Fredericton
+# Geotechnical Engineering — Fredericton
 
-> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+> Geotechnical engineering services in Fredericton, Canada.
 
 ## Services
-- [Base Isolation Seismic Design](https://fredericton.geotechnical-engineering.org/base-isolation-seismic-design/)
-- [Deep Soil Mixing](https://fredericton.geotechnical-engineering.org/deep-soil-mixing/)
-- [Differential Settlement Analysis](https://fredericton.geotechnical-engineering.org/differential-settlement-analysis/)
-- [Driven Pile Design](https://fredericton.geotechnical-engineering.org/driven-pile-design/)
-- [Field Permeability](https://fredericton.geotechnical-engineering.org/field-permeability/)
+- [Anchors](https://fredericton.geotechnical-engineering.org/anchors/)
+- [Atterberg Limits](https://fredericton.geotechnical-engineering.org/atterberg-limits/)
+- [Cbr Road](https://fredericton.geotechnical-engineering.org/cbr-road/)
+- [Cpt Test](https://fredericton.geotechnical-engineering.org/cpt-test/)
+- [Deep Excavations](https://fredericton.geotechnical-engineering.org/deep-excavations/)
+- [Excavation Monitoring](https://fredericton.geotechnical-engineering.org/excavation-monitoring/)
+- [Excavations](https://fredericton.geotechnical-engineering.org/excavations/)
+- [Flexible Pavement](https://fredericton.geotechnical-engineering.org/flexible-pavement/)
+- [Footings](https://fredericton.geotechnical-engineering.org/footings/)
 - [Foundations](https://fredericton.geotechnical-engineering.org/foundations/)
-- [Foundations Fill](https://fredericton.geotechnical-engineering.org/foundations-fill/)
-- [Geogrid Specification](https://fredericton.geotechnical-engineering.org/geogrid-specification/)
-- [Geotechnical Analysis Soft Soil](https://fredericton.geotechnical-engineering.org/geotechnical-analysis-soft-soil/)
-- [Geotechnical Drainage Design](https://fredericton.geotechnical-engineering.org/geotechnical-drainage-design/)
-- [Geotechnical Instrumentation](https://fredericton.geotechnical-engineering.org/geotechnical-instrumentation/)
-- [Geotechnical Road Drainage](https://fredericton.geotechnical-engineering.org/geotechnical-road-drainage/)
+- [Grain Size](https://fredericton.geotechnical-engineering.org/grain-size/)
 - [Ground Improvement](https://fredericton.geotechnical-engineering.org/ground-improvement/)
-- [Grouting Design](https://fredericton.geotechnical-engineering.org/grouting-design/)
-- [In Situ Testing](https://fredericton.geotechnical-engineering.org/in-situ-testing/)
+- [Grouting](https://fredericton.geotechnical-engineering.org/grouting/)
+- [In Situ Permeability](https://fredericton.geotechnical-engineering.org/in-situ-permeability/)
 - [Investigation](https://fredericton.geotechnical-engineering.org/investigation/)
+- [Lab In Situ](https://fredericton.geotechnical-engineering.org/lab-in-situ/)
 - [Laboratory](https://fredericton.geotechnical-engineering.org/laboratory/)
-- [Lime Cement Stabilization](https://fredericton.geotechnical-engineering.org/lime-cement-stabilization/)
-- [Mechanically Stabilized Earth](https://fredericton.geotechnical-engineering.org/mechanically-stabilized-earth/)
-- [Oedometer Consolidation](https://fredericton.geotechnical-engineering.org/oedometer-consolidation/)
-- [Pile Skin Friction Vs](https://fredericton.geotechnical-engineering.org/pile-skin-friction-vs/)
-- [Residual Soil Characterization](https://fredericton.geotechnical-engineering.org/residual-soil-characterization/)
-- [Retaining Wall Design](https://fredericton.geotechnical-engineering.org/retaining-wall-design/)
-- [Road Subgrade Design](https://fredericton.geotechnical-engineering.org/road-subgrade-design/)
-- [Roadway](https://fredericton.geotechnical-engineering.org/roadway/)
+- [Liquefaction](https://fredericton.geotechnical-engineering.org/liquefaction/)
+- [Masw](https://fredericton.geotechnical-engineering.org/masw/)
+- [Mat Foundations](https://fredericton.geotechnical-engineering.org/mat-foundations/)
+- [Piles](https://fredericton.geotechnical-engineering.org/piles/)
+- [Proctor Tests](https://fredericton.geotechnical-engineering.org/proctor-tests/)
+- [Resistivity](https://fredericton.geotechnical-engineering.org/resistivity/)
+- [Retaining Walls](https://fredericton.geotechnical-engineering.org/retaining-walls/)
+- [Rigid Pavement](https://fredericton.geotechnical-engineering.org/rigid-pavement/)
+- [Road Geotechnics](https://fredericton.geotechnical-engineering.org/road-geotechnics/)
+- [Sand Cone Density](https://fredericton.geotechnical-engineering.org/sand-cone-density/)
 - [Seismic](https://fredericton.geotechnical-engineering.org/seismic/)
-- [Slope Failure Analysis](https://fredericton.geotechnical-engineering.org/slope-failure-analysis/)
-- [Slope Stability Analysis](https://fredericton.geotechnical-engineering.org/slope-stability-analysis/)
-- [Slopes Walls](https://fredericton.geotechnical-engineering.org/slopes-walls/)
-- [Soil Mechanics Study](https://fredericton.geotechnical-engineering.org/soil-mechanics-study/)
-- [Standard Penetration](https://fredericton.geotechnical-engineering.org/standard-penetration/)
-- [Stone Column Design](https://fredericton.geotechnical-engineering.org/stone-column-design/)
+- [Seismic Isolation](https://fredericton.geotechnical-engineering.org/seismic-isolation/)
+- [Seismic Microzonation](https://fredericton.geotechnical-engineering.org/seismic-microzonation/)
+- [Seismic Refraction](https://fredericton.geotechnical-engineering.org/seismic-refraction/)
+- [Slope Stability](https://fredericton.geotechnical-engineering.org/slope-stability/)
+- [Slopes](https://fredericton.geotechnical-engineering.org/slopes/)
+- [Soft Ground Tunnels](https://fredericton.geotechnical-engineering.org/soft-ground-tunnels/)
+- [Spt Drilling](https://fredericton.geotechnical-engineering.org/spt-drilling/)
+- [Stone Columns](https://fredericton.geotechnical-engineering.org/stone-columns/)
+- [Test Pits](https://fredericton.geotechnical-engineering.org/test-pits/)
 - [Triaxial](https://fredericton.geotechnical-engineering.org/triaxial/)
-- [Underground Excavations](https://fredericton.geotechnical-engineering.org/underground-excavations/)
-- [Undisturbed Sampling](https://fredericton.geotechnical-engineering.org/undisturbed-sampling/)
-- [Vibrocompaction Design](https://fredericton.geotechnical-engineering.org/vibrocompaction-design/)
+- [Vibrocompaction](https://fredericton.geotechnical-engineering.org/vibrocompaction/)
 
 ## Contact
 - Website: https://fredericton.geotechnical-engineering.org/
 
 ## About
-This page provides information about geotechnical engineering services available in United States.
-The company complies with local and international standards including ASTM, ISO and country-specific norms.
+This site provides geotechnical engineering services in Fredericton, Canada.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
